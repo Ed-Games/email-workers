@@ -54,7 +54,7 @@ services:
       # Worker
       - ./worker:/worker
     working_dir: /worker
-    command: ./app.sh
+    command: bash ./app.sh
     networks:
     - fila
     depends_on:
