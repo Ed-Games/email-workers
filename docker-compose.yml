@@ -40,6 +40,8 @@ services:
 
   app:
     image: python:3.6
+    environment:
+      - DB_NAME=email_sender
     volumes:
       # Aplicação
       - ./app:/app
